@@ -92,12 +92,49 @@ class SortingRobot:
         """
         return self._light == "ON"
 
+    def go_thru_once(self):
+        self.swap_item()
+        self.move_right()
+        self.set_light_off()
+        while self.can_move_right():
+            if self.compare_item() == -1:
+                self.swap_item()
+                self.set_light_on()
+
+            self.move_right()
+        self.swap_item()    
+        
+
+    def move_to_beginning(self):
+        while self.can_move_left():
+            self.move_left()
+
+        self.move_right()
+
     def sort(self):
         """
         Sort the robot's list.
         """
+        # bubble sort seems to be the most like this one, except a lack of access to the length
+        # set the light on
+        # swap the first item in hand, so robot is holding something (and None is at the beginning of the list)
+        # move right to the first non-none element
+        # while we can move right, and the light is on,
+            # set the light to off
+            # if we compare the items, and the
         # Fill this out
-        pass
+        self.go_thru_once()
+        self.move_to_beginning()
+
+        if self.light_is_on():
+            self.sort()
+
+            
+            
+
+
+
+
 
 
 if __name__ == "__main__":

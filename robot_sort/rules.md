@@ -1,0 +1,32 @@
+# Rules:
+
+- You can use any pre-defined robot methods
+    - 𝐜𝐚𝐧_𝐦𝐨𝐯𝐞_𝐫𝐢𝐠𝐡𝐭(): Returns `True` if the robot is not at the end of the list, `False` if it is.
+    - 𝐜𝐚𝐧_𝐦𝐨𝐯𝐞_𝐥𝐞𝐟𝐭(): Returns `True` if the robot is not at the start of the list, `False` if it is.
+    - 𝐦𝐨𝐯𝐞_𝐫𝐢𝐠𝐡𝐭(): Moves one place to the right and returns `True`, otherwise, stays in place and returns `False`. 
+        - 𝑖𝑛𝑐𝑟𝑒𝑚𝑒𝑛𝑡𝑠 𝑡𝑖𝑚𝑒 𝑐𝑜𝑢𝑛𝑡𝑒𝑟 𝑏𝑦 𝑜𝑛𝑒 𝑓𝑜𝑟 𝑠𝑡𝑟𝑒𝑡𝑐h
+    - 𝐦𝐨𝐯𝐞_𝐥𝐞𝐟𝐭(): Moves one place to the left and returns `True`, otherwise, stays in place and returns `False`. 
+        - 𝑖𝑛𝑐𝑟𝑒𝑚𝑒𝑛𝑡𝑠 𝑡𝑖𝑚𝑒 𝑐𝑜𝑢𝑛𝑡𝑒𝑟 𝑏𝑦 𝑜𝑛𝑒 𝑓𝑜𝑟 𝑠𝑡𝑟𝑒𝑡𝑐h
+    - 𝐬𝐰𝐚𝐩_𝐢𝐭𝐞𝐦(): Takes currently held item, and swaps with the item in front of it.
+        - 𝑖𝑛𝑐𝑟𝑒𝑚𝑒𝑛𝑡𝑠 𝑡𝑖𝑚𝑒 𝑐𝑜𝑢𝑛𝑡𝑒𝑟 𝑏𝑦 𝑜𝑛𝑒 𝑓𝑜𝑟 𝑠𝑡𝑟𝑒𝑡𝑐h
+    - 𝐜𝐨𝐦𝐩𝐚𝐫𝐞_𝐢𝐭𝐞𝐦(): Compare the held item with the one in front of it
+        - If held is greater, returns 1
+        - If held is less, returns -1
+        - If held is equal, returns 0
+        - If either is None, returns None
+    - 𝐬𝐞𝐭_𝐥𝐢𝐠𝐡𝐭_𝐨𝐧(): Turn on the robot's light
+    - 𝐬𝐞𝐭_𝐥𝐢𝐠𝐡𝐭_𝐨𝐟𝐟(): Turn off the robot's light
+    - 𝐥𝐢𝐠𝐡𝐭_𝐢𝐬_𝐨𝐧(): Returns `True` if robot's light is on, `False` otherwise
+- You may 𝐍𝐎𝐓 modify any of the pre-defined robot methods.
+- You may use logical operators.
+    - `if`, `and`, `or`, `not`, etc.
+- You may use comparison operators.
+    - `>`, `>=`, `<`, `<=`, `==`, `is`, etc.
+- You may use iterators.
+    - `while`, `for`, `break`, `continue`, etc.
+- Do 𝐍𝐎𝐓 store any variables
+    - 𝑥 = 𝑦
+- Do 𝐍𝐎𝐓 access any instance variables directly
+    - `self._anything`
+- Do 𝐍𝐎𝐓 use any Python libraries like `sorted()` or anything.
+- 𝐻𝑜𝑤𝑒𝑣𝑒𝑟, you 𝐂𝐀𝐍 define robot helper methods, as long as they follow all the rules.
